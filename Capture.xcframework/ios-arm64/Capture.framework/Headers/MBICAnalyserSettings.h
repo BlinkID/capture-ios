@@ -65,14 +65,18 @@ MBIC_CORE_FINAL
 /// Enables document capture with a margin defined as the percentage of the dimensions of the framed document.
 ///
 /// Both margin and document are required to be fully visible on camera frame in order to finish capture.
+///
 /// Allowed values are from 0 to 1.
+///
+/// - Throws: `MBICInvalidDocumentFramingMarginException` if the quantity is less than 0 and more than 1.
 ///
 /// Default: `0.01f`
 @property (nonatomic) CGFloat documentFramingMargin;
 
 /// Defines percentage of the document area that is allowed to be occluded by hand.
-///
 /// Allowed values are from 0 to 1.
+///
+/// - Throws: `MBICInvalidHandOcclusionTresholdException` if the quantity is less than 0 and more than 1.
 ///
 /// Default: `0.05f`
 @property (nonatomic) CGFloat handOcclusionThreshold;
@@ -81,6 +85,8 @@ MBIC_CORE_FINAL
 /// Frames with documents tilted more than defined by this threshold are discarded.
 ///
 /// Allowed values are from 0 to 1.
+///
+/// - Throws: `MBICInvalidTiltTresholdException` if the quantity is less than 0 and more than 1.
 ///
 /// Default:` 0.17f`
 @property (nonatomic) CGFloat tiltThreshold;
@@ -98,7 +104,7 @@ MBIC_CORE_FINAL
 /// Affects how close the document needs to be to the camera in order to get captured and meet dpi requirements.
 /// Allowed values are [ 150, 400 ].
 ///
-/// - Throws: `MBICMissingSettingsException` if the quantity is less than 200 and more than 400.
+/// - Throws: `MBICInvalidDocumentDpiException` if the quantity is less than 200 and more than 400.
 /// 
 /// Default: `250`
 @property (nonatomic) NSInteger minimumDocumentDpi;
@@ -117,11 +123,15 @@ MBIC_CORE_FINAL
 ///
 /// Allowed values are from 0 to 1.
 ///
+/// - Throws: `MBICInvalidLightingThrsholdsException` if the quantity is less than 0 and more than 1.
+///
 /// Default: `0.99f`
 @property (nonatomic) CGFloat tooDarkThreshold;
 
 /// Threshold used to classify the frame as too bright.
 /// If the calculated lighting score is above this threshold, it is discarded.
+///
+/// - Throws: `MBICInvalidLightingThrsholdsException` if the quantity is less than 0 and more than 1.
 ///
 /// Allowed values are from 0 to 1.
 ///
