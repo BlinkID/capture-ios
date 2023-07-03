@@ -42,7 +42,6 @@
 		A20CC54F2A39EFA600F669B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A20CC5512A39EFA600F669B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20CC5582A39F03F00F669B7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		A20CC5592A39F04500F669B7 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		A20CC55A2A39F04B00F669B7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A20CC55B2A39F08F00F669B7 /* Capture.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Capture.xcframework; path = ../../Capture.xcframework; sourceTree = "<group>"; };
 		A20CC55F2A39F26C00F669B7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -97,7 +96,6 @@
 			children = (
 				A20CC55B2A39F08F00F669B7 /* Capture.xcframework */,
 				A20CC55A2A39F04B00F669B7 /* libz.tbd */,
-				A20CC5592A39F04500F669B7 /* libiconv.tbd */,
 				A20CC5582A39F03F00F669B7 /* libc++.tbd */,
 			);
 			name = Frameworks;
