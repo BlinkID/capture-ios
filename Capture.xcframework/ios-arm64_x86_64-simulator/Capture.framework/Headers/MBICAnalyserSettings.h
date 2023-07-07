@@ -45,7 +45,7 @@ MBIC_CORE_FINAL
 
 /// Defines whether to discard frames with blurred documents.
 ///
-/// If disabled, the capture process is allowed to finish with blurry documents.
+/// If enabled, the capture process is allowed to finish with blurry documents.
 ///
 /// Default: `NO`
 @property (nonatomic) BOOL ignoreBlur;
@@ -57,7 +57,7 @@ MBIC_CORE_FINAL
 
 /// Defines whether to discard frames with glare detected on the document.
 ///
-/// If disabled, the capture process is allowed to finish with glare on the document.
+/// If enabled, the capture process is allowed to finish with glare on the document.
 ///
 /// Default: `NO`
 @property (nonatomic) BOOL ignoreGlare;

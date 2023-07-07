@@ -1,5 +1,11 @@
 # Release notes
 
+## v1.0.2
+
+- Various capture improvements
+- Bug fix:
+	- Fix text colour on the help screen for dark mode
+
 ## v1.0.1
 
 - Various capture optimiziations
