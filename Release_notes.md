@@ -1,5 +1,10 @@
 # Release notes
 
+## v1.0.3
+
+- Bug fix:
+	- Fix capture timeout for the second side capture - return the result after a timeout if valid candidate is captured
+
 ## v1.0.2
 
 - Various capture improvements
