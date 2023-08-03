@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.3
+
+- No changes
+
 ## v1.0.2
 
 - No changes

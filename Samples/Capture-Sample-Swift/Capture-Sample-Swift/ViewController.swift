@@ -12,8 +12,6 @@ import UIKit
 import Capture
 
 class ViewController: UIViewController {
-    
-    let captureVC: MBICCaptureViewController = MBICCaptureViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +19,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startCapture(_ sender: Any) {
+        
+        let captureVC: MBICCaptureViewController = MBICCaptureViewController()
+        
         // Set delegate.
         captureVC.delegate = self
         
