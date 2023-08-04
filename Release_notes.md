@@ -1,5 +1,10 @@
 # Release notes
 
+## v1.0.4
+
+- Bug fix:
+	- Fix side capture timeout invalidation
+
 ## v1.0.3
 
 - Bug fix:
