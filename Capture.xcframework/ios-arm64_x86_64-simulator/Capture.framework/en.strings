@@ -44,6 +44,12 @@
 "mbic_back" = "Back";
 "mbic_next" = "Next";
 "mbic_ok" = "OK";
+"mbic_close" = "Close";
 
 // Torch
 "mbic_torch_glare_tooltip_message" = "Watch out for flashlight glare.\nGently move your ID around to avoid it.";
+
+// License
+"mbic_check_internet_connection" = "Check internet connection";
+"mbic_network_error" = "Network error";
+"mbic_scanning_not_available" = "Scanning not available";
