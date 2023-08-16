@@ -1,5 +1,11 @@
 # Release notes
 
+## v1.0.5
+
+- Internal capture improvements
+- Bug fix:
+	- Fix a memory leak
+
 ## v1.0.4
 
 - Bug fix:
