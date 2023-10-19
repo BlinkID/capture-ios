@@ -13,19 +13,22 @@
 		A20CC54B2A39EFA500F669B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20CC5492A39EFA500F669B7 /* Main.storyboard */; };
 		A20CC54D2A39EFA600F669B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20CC54C2A39EFA600F669B7 /* Assets.xcassets */; };
 		A20CC5502A39EFA600F669B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20CC54E2A39EFA600F669B7 /* LaunchScreen.storyboard */; };
-		A20CC55C2A39F08F00F669B7 /* Capture.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20CC55B2A39F08F00F669B7 /* Capture.xcframework */; };
-		A20CC55D2A39F08F00F669B7 /* Capture.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A20CC55B2A39F08F00F669B7 /* Capture.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A20CC5602A39F26C00F669B7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20CC55F2A39F26C00F669B7 /* ResultViewController.swift */; };
+		A2919BB52AE01F4F00074E38 /* CaptureUX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2919BB32AE01F4F00074E38 /* CaptureUX.xcframework */; };
+		A2919BB62AE01F4F00074E38 /* CaptureUX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2919BB32AE01F4F00074E38 /* CaptureUX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2919BB72AE01F4F00074E38 /* CaptureCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2919BB42AE01F4F00074E38 /* CaptureCore.xcframework */; };
+		A2919BB82AE01F4F00074E38 /* CaptureCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2919BB42AE01F4F00074E38 /* CaptureCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A20CC55E2A39F08F00F669B7 /* Embed Frameworks */ = {
+		A2919BB92AE01F4F00074E38 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A20CC55D2A39F08F00F669B7 /* Capture.xcframework in Embed Frameworks */,
+				A2919BB62AE01F4F00074E38 /* CaptureUX.xcframework in Embed Frameworks */,
+				A2919BB82AE01F4F00074E38 /* CaptureCore.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,8 +46,9 @@
 		A20CC5512A39EFA600F669B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20CC5582A39F03F00F669B7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A20CC55A2A39F04B00F669B7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		A20CC55B2A39F08F00F669B7 /* Capture.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Capture.xcframework; path = ../../Capture.xcframework; sourceTree = "<group>"; };
 		A20CC55F2A39F26C00F669B7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A2919BB32AE01F4F00074E38 /* CaptureUX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CaptureUX.xcframework; path = ../../CaptureUX.xcframework; sourceTree = "<group>"; };
+		A2919BB42AE01F4F00074E38 /* CaptureCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CaptureCore.xcframework; path = ../../CaptureCore.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A20CC55C2A39F08F00F669B7 /* Capture.xcframework in Frameworks */,
+				A2919BB52AE01F4F00074E38 /* CaptureUX.xcframework in Frameworks */,
+				A2919BB72AE01F4F00074E38 /* CaptureCore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +99,8 @@
 		A20CC5572A39F03F00F669B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A20CC55B2A39F08F00F669B7 /* Capture.xcframework */,
+				A2919BB42AE01F4F00074E38 /* CaptureCore.xcframework */,
+				A2919BB32AE01F4F00074E38 /* CaptureUX.xcframework */,
 				A20CC55A2A39F04B00F669B7 /* libz.tbd */,
 				A20CC5582A39F03F00F669B7 /* libc++.tbd */,
 			);
@@ -111,7 +117,7 @@
 				A20CC53C2A39EFA500F669B7 /* Sources */,
 				A20CC53D2A39EFA500F669B7 /* Frameworks */,
 				A20CC53E2A39EFA500F669B7 /* Resources */,
-				A20CC55E2A39F08F00F669B7 /* Embed Frameworks */,
+				A2919BB92AE01F4F00074E38 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

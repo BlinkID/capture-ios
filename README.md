@@ -18,12 +18,15 @@ In the results, you can get a cropped, perspective-corrected image of the docume
   - [Getting started with the Capture SDK](#getting-started-with-the-capture-sdk)
       - [Manual integration](#manual-integration)
       - [Using Swift Package Manager](#using-swift-package-manager)
+      - [Using Cocoapods](#using-cocoapods)
     - [Referencing header file](#referencing-header-file)
     - [Initiating the capture process](#initiating-the-capture-process)
     - [License key](#license-key)
     - [Registering for capturing events](#registering-for-capturing-events)
 - [Customizing the look and UX](#customizing-the-look)
 - [Localization](#localization)
+- [Completely custom UX with Direct API (advanced)](#direct-api)
+	- [The `AnalyzerRunner`](#analyzer-runner)
 - [Troubleshooting](#troubleshooting)
 - [Capture SDK size](#capture-sdk-size)
 - [Additional info](#additional-info)
@@ -44,11 +47,11 @@ The source code of the sample app can be used as a reference during the integrat
 
 [Download](https://github.com/BlinkID/capture-ios/releases) latest release (Download `Capture.xcframework.zip` file or clone this repository).
 
-- Copy `Capture.xcframework` to your project folder.
+- Copy `CaptureUX.xcframework` and `CaptureCore.xcframework` to your project folder.
 
-- In your Xcode project, open the Project navigator. Drag the `Capture.xcframework` file to your project, ideally in the Frameworks group, together with other frameworks you're using. When asked, choose "Create groups", instead of the "Create folder references" option.
+- In your Xcode project, open the Project navigator. Drag the `CaptureUX.xcframework` and `CaptureCore.xcframework` file to your project, ideally in the Frameworks group, together with other frameworks you're using. When asked, choose "Create groups", instead of the "Create folder references" option.
 
-- Since `Capture.xcframework` is a dynamic framework, you also need to add it to embedded binaries section in General settings of your target and choose option `Embed & Sign`.
+- Since `CaptureUX.xcframework` and `CaptureCore.xcframework` are dynamic frameworks, you also need to add them to embedded binaries section in General settings of your target and choose option `Embed & Sign`.
 
 - Include the additional frameworks and libraries into your project in the "Linked frameworks and libraries" section of your target settings.
 	- libc++.tbd
@@ -60,8 +63,49 @@ Capture SDK is available as [Swift Package](https://swift.org/package-manager/).
 
 We provide a URL to the public package repository that you can add in Xcode:
 
+CaptureUX
+
 ```shell
-https://github.com/BlinkID/capture-ios
+https://github.com/BlinkID/capture-ux-sp
+```
+
+CaptureCore
+
+```shell
+https://github.com/BlinkID/capture-core-sp
+```
+
+#### <a name="using-cocoapods"></a> Using Cocoapods
+
+Capture SDK is available as [Cocopods Package](https://cocoapods.org).
+We provide podspecs for each framework. Project dependencies to be managed by CocoaPods are specified in a file called `Podfile`. Create this file in the same directory as your Xcode project (`.xcodeproj`) file.
+
+If you don't have podfile initialized run the following in your project directory.
+
+```
+pod init
+```
+
+Copy and paste the following lines into the TextEdit window:
+
+```ruby
+platform :ios, '13.0'
+target 'Your-App-Name' do
+    pod 'MBCaptureCore', '~> 1.1.0'
+    pod 'MBCaptureUX', '~> 1.1.0'
+end
+```
+
+- Install the dependencies in your project:
+
+```shell
+$ pod install
+```
+
+- From now on, be sure to always open the generated Xcode workspace (`.xcworkspace`) instead of the project file when building your project:
+
+```shell
+open <YourProjectName>.xcworkspace
 ```
 
 ### <a name="referencing-header-file"></a> Referencing header file
@@ -71,13 +115,15 @@ In files in which you want to use the functionality of the SDK place the import 
 Swift
 
 ```swift
-import Capture
+import CaptureCore
+import CaptureUX
 ```
 
 Objective-C
 
 ```objective-c
-#import <Capture/Capture.h>
+#import <CaptureCore/CaptureCore.h>
+#import <CaptureUX/CaptureUX>
 ```
 
 ### <a name="initiating-the-capture-process"></a> Initiating the capture process
@@ -269,6 +315,84 @@ For example, let's say that we want to change text "Scan the front side of a doc
 * Add the translation key "mbic_scan_the_front_side" and the value "Scan the front side" to MyTranslations.strings
 * Finally in AppDelegate.swift in method `application(_:, didFinishLaunchingWithOptions:)` add `MBICCaptureUISDK.shared().customLocalizationFileName = "MyTranslations"`
 
+Also, you can change our .strings files directly in frameowrk. Go to Capture.framework and replace them.
+
+# <a name="direct-api"></a> Completely custom UX with Direct API (advanced)
+
+When using the **Direct API**, you are responsible for preparing input image stream (or static images) for analysis and building a completely custom UX from scratch based on the image-by-image feedback from the SDK. 
+
+Direct API gives you more flexibility with the cost of a significantly larger integration effort. For example, if you need a camera, you will be responsible for camera management and displaying real-time user guidance.
+
+Check out our [Direct API sample app](https://github.com/BlinkID/capture-ios/tree/main/Samples/Capture-Core-Sample-Swift/Capture-Core-Sample-Swift) for the implementation.
+
+### Adding _Capture_ SDK dependency for Direct API
+
+For Direct API, you need only Capture SDK core library: **CaptureCore**, CaptureUX is not needed.
+
+## <a name="analyzer-runner"></a> The `MBCCAnalyzerRunner`
+
+For the Direct API integration, use the [MBCCAnalyzerRunner](https://blinkid.github.io/capture-core-sp/documentation/capturecore/).  It is a singleton object, meaning it is possible to capture a single document at a time.
+
+Like in the default UX, you can configure the `MBCCAnalyzerRunner` with desired [MBCCAnalyzerSettings](https://blinkid.github.io/capture-core-sp/documentation/capturecore/). It is allowed to update settings at any time during analysis.
+
+```kotlin
+AnalyzerRunner.settings = AnalyzerSettings(
+    // set supported options
+)
+```
+
+When starting the analysis of the next document, be sure that Analyzer has been reset to the initial state:
+
+```swift
+MBCCAnalyzerRunner.shared().reset()
+```
+
+```objective-c
+[MBCCAnalyzerRunner sharedInstance] reset];
+```
+
+During analysis and after analysis is done, the current result is available via [MBCCFrameAnalysisResult](https://blinkid.github.io/capture-core-sp/documentation/capturecore/).
+
+After analysis is done, and you don't need the `MBCCAnalyzerRunner` anymore, be sure to terminate it to release the allocated memory for processing:
+
+```swift
+MBCCAnalyzerRunner.shared().terminate()
+```
+
+```objective-c
+[MBCCAnalyzerRunner sharedInstance] terminate]
+```
+
+After terminating, the `MBCCAnalyzerRunner` could be used later again. Just start feeding the frames for the next document.
+
+
+### <a name="direct-api-image-stream"></a> Analyzing the stream of images
+
+When you have a larger number of images coming from the stream, e.g. camera stream or pre-recorded
+video stream, use [MBCCAnalyzerRunner analyzeStreamImage](https://blinkid.github.io/capture-core-sp/documentation/capturecore/) method.
+
+It is expected that you will call this method multiple times to analyze the single document and all analyzed images are considered for building the final result.
+		
+For each frame, all relevant info for the current status of the analysis and the capture process
+is returned by [didAnalyzeFrameWithResult](https://blinkid.github.io/capture-core-sp/documentation/capturecore/) delegate as [MBCCFrameAnalysisResult](https://blinkid.github.io/capture-core-sp/documentation/capturecore/), which could be used to guide the user through the scanning process and give real-time feedback.
+
+When [MBCCFrameAnalysisResult captureState](https://blinkid.github.io/capture-core-sp/documentation/capturecore/) becomes `MBCCCaptureStateDocumentCaptured`, this means that the document has been successfully captured and you can use the result as a final capture result. To immediately reset the Analyzer to its initial state and avoid further result changes, you can use `MBCCAnalyzerRunner.shared().detachResult()`.
+
+### <a name="direct-api-few-images"></a> Analyzing a few images (usually one or two)
+
+When you have a fixed number of images to analyze, e.g. one (or few) for the front side
+and another (or few) for the back side of the document, use [MBCCAnalyzerRunner analyzeImage](https://blinkid.github.io/capture-core-sp/documentation/capturecore/), which is optimized for single image analysis.
+
+Make sure that you have set appropriate settings to enable capturing of the document side from the single image:
+
+```swift
+MBCCAnalyzerRunner.shared().settings.captureStrategy = .singleFrame
+```
+
+```objective-c
+[MBCCAnalyzerRunner sharedInstance].settings.captureStrategy = MBCCCaptureStrategySingleFrame
+```
+
 # <a name="troubleshooting"></a> Troubleshooting
 
 ## <a name="troubleshooting-integration-problems"></a> Integration problems
@@ -317,6 +441,9 @@ You can find the *App Size Report* [here](https://github.com/BlinkID/core-ios/tr
 
 # <a name="info"></a> Additional info
 
-Complete API reference can be found [here](http://blinkid.github.io/capture-ios/documentation/capture/). 
+Complete API references can be found:
+
+* [CaptureUX](http://blinkid.github.io/capture-ux-sp/documentation/captureux/) 
+* [CaptureCore](http://blinkid.github.io/capture-core-sp/documentation/capturecore/)
 
 For any other questions, feel free to contact us at [help.microblink.com](http://help.microblink.com).

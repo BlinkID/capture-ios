@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  ImageCapture
+
+  Created by Jura Skrlec on 11.05.2023..
+  
+*/
+
+// Capture messages
+"mbic_scan_the_front_side" = "Scan the front side of the document";
+"mbic_flip_document" = "Flip the document";
+"mbic_scan_the_back_side" = "Scan the back side of the document";
+"mbic_move_closer" = "Move closer";
+"mbic_move_farther" = "Move farther";
+"mbic_camera_angle_too_steep" = "Keep document parallel to phone";
+"mbic_document_too_close_to_edge" = "Keep the document fully visible";
+"mbic_lightning_too_bright" = "Move to spot with less lighting";
+"mbic_lightning_too_dark" = "Move to brighter spot";
+"mbic_blur_detected" = "Keep document and phone still";
+"mbic_glare_detected" = "Tilt or move document to remove reflection";
+"mbic_occluded" = "Keep the document fully visible";
+"mbic_camer_orientation_unsuitable_animation" = "Rotate card or turn phone to landscape";
+"mbic_camer_orientation_unsuitable" = "Rotate phone or card";
+
+// Tutorial
+"mbic_need_help_tooltip" = "Need help?";
+"mbic_onboarding_field_visible_title" = "Keep all the details visible";
+"mbic_onboarding_field_visible_details" = "Make sure you keep the document well lit. All document fields should be visible on the camera screen.";
+"mbic_tutorial_fields_visible_title" = "Keep all the fields visible";
+"mbic_tutorial_fields_visible_details" = "Make sure you aren’t covering parts of the document with a finger, including the bottom lines. Also, watch out for hologram reflections that go over the document fields.";
+"mbic_tutorial_harsh_light_title" = "Watch out for harsh light";
+"mbic_tutorial_harsh_light_details" = "Avoid direct harsh light because it reflects from the document and can make parts of the document unreadable. If you can’t read data on the document, it won’t be visible to the camera either.";
+"mbic_tutorial_keep_still_title" = "Keep still while scanning";
+"mbic_tutorial_keep_still_details" = "Try to keep the phone and document still while scanning. Moving either can blur the image and make data on the document unreadable.";
+
+// Camera
+"mbic_camera_unavailable" = "Camera Unavailable";
+"mbic_camera_permission_error" = "App doesn't have permission to use the camera, please change privacy settings";
+"mbic_settings" = "Settings";
+"mbic_camera_media_capture_error" = "Unable to capture media";
+"mbic_camera_unable_to_resume_session" = "Unable to resume";
+
+// Shared
+"mbic_done" = "Done";
+"mbic_cancel" = "Cancel";
+"mbic_back" = "Back";
+"mbic_next" = "Next";
+"mbic_ok" = "OK";
+"mbic_close" = "Close";
+
+// Torch
+"mbic_torch_glare_tooltip_message" = "Watch out for flashlight glare.\nGently move your ID around to avoid it.";
+
+// License
+"mbic_check_internet_connection" = "Check internet connection";
+"mbic_network_error" = "Network error";
+"mbic_scanning_not_available" = "Scanning not available";

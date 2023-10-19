@@ -9,15 +9,15 @@
 // REVERSE ENGINEER, DECOMPILE, OR DISASSEMBLE IT.
 
 import UIKit
-import Capture
+import CaptureCore
 
 class ResultViewController: UIViewController {
     
     let captureResultTableView = UITableView()
     let cancelButton = UIButton()
-    var analyserResult: MBICAnalyserResult?
+    var analyserResult: MBCCAnalyzerResult?
     
-    init(analyserResult: MBICAnalyserResult) {
+    init(analyserResult: MBCCAnalyzerResult) {
         self.analyserResult = analyserResult
         super.init(nibName: nil, bundle: nil)
     }

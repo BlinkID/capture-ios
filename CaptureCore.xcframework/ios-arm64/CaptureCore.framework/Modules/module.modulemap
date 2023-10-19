@@ -1,0 +1,6 @@
+framework module CaptureCore {
+  umbrella header "CaptureCore.h"
+  export *
+
+  module * { export * }
+}

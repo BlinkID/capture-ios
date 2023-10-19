@@ -1,6 +1,0 @@
-framework module Capture {
-  umbrella header "Capture.h"
-
-  export *
-  module * { export * }
-}
