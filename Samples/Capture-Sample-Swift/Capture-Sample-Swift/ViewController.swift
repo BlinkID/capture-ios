@@ -9,7 +9,8 @@
 // REVERSE ENGINEER, DECOMPILE, OR DISASSEMBLE IT.
 
 import UIKit
-import Capture
+import CaptureUX
+import CaptureCore
 
 class ViewController: UIViewController {
 
@@ -34,19 +35,17 @@ class ViewController: UIViewController {
 // Conform to MBICCaptureViewControllerDelegate
 extension ViewController: MBICCaptureViewControllerDelegate {
     
-    // This is the required implementation.
-    // This is returned on the background queue.
-    func captureViewController(captureViewController: MBICCaptureViewController, didFinishCaptureWithResult analyserResult: MBICAnalyserResult) {
-        
+    func captureViewController(captureViewController: MBICCaptureViewController, didFinishCaptureWithResult analyzerResult: MBCCAnalyzerResult) {
         // UI Changes.
         DispatchQueue.main.async {
             captureViewController.dismiss(animated: true)
             
             // Show results.
-            let resultViewController = ResultViewController(analyserResult: analyserResult)
+            let resultViewController = ResultViewController(analyserResult: analyzerResult)
             resultViewController.modalPresentationStyle = .fullScreen
             self.present(resultViewController, animated: true)
         }
     }
+
 }
 

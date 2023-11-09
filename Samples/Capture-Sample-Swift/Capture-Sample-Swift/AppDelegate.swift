@@ -9,7 +9,7 @@
 // REVERSE ENGINEER, DECOMPILE, OR DISASSEMBLE IT.
 
 import UIKit
-import Capture
+import CaptureCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Set the license key here.
-        MBICCaptureSDK.shared().setLicenseKey("sRwCAB1jb20ubWljcm9ibGluay5jYXB0dXJlLnNhbXBsZQEKbWljcm9ibGlua8LDQo405Nu1wyLsGHVUiH9UFV585DMxTQHzt28/+7YqBGyInzZCS2KZgbZ656YPTkk5LtOXcV9R7OcqhpybX22l5sH3QBBY/bLboAxbVaFhSc7KyZ4OJINQsokUKg==") { _ in
+        // Valid until: 2024-01-26
+        MBCCCaptureCoreSDK.shared().setLicenseKey("sRwCAB1jb20ubWljcm9ibGluay5jYXB0dXJlLnNhbXBsZQEKTWljcm9ibGlua8LDQo405Nu1wyLsGNUR/B52SDMA3FFxxJZ+wQ5VMOAqrRHg5G0Clw5+EuHfO0D749GH7qZEvviB3gcT4oAicyuMqfqBfePTeW9BEbohNF3lCu3L2+oGSagG3od4TaRd/yc=") { _ in
             
         }
         

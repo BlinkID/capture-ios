@@ -1,0 +1,6 @@
+framework module CaptureUX {
+  umbrella header "CaptureUX.h"
+  export *
+
+  module * { export * }
+}
