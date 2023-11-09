@@ -32,6 +32,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0.0'
   s.ios.vendored_frameworks = 'CaptureCore.xcframework'
-  s.ios.libraries = 'c++', `z`
+  s.ios.libraries = 'c++', 'z'
 
 end
