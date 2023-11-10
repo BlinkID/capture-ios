@@ -77,7 +77,6 @@ https://github.com/BlinkID/capture-core-sp
 
 #### <a name="using-cocoapods"></a> Using Cocoapods
 
-NOTE: Still not supported with v1.1.0. Investigating Xcode 15 Cocoapods errors.
 Capture SDK is available as [Cocopods Package](https://cocoapods.org).
 We provide podspecs for each framework. Project dependencies to be managed by CocoaPods are specified in a file called `Podfile`. Create this file in the same directory as your Xcode project (`.xcodeproj`) file.
 

@@ -1,5 +1,9 @@
 # Release notes
 
+## v1.1.1
+
+- Cocopods Xcode 15 support
+
 ## v1.1.0
 
 ### Improvements
