@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.1.1
+
+- No changes
+
 ## v1.1.0
 
 - See release notes.
