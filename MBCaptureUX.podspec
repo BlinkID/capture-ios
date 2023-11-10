@@ -28,8 +28,6 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
 
-  s.dependency 'MBCaptureCore', '1.1.1'
-
   # ――― MULTI-PLATFORM VALUES ――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.ios.deployment_target = '13.0.0'
