@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.2.0
+
+- Introduced `BlurPolicy`, `GlarePolicy`, `TiltPolicy` which are used to enable `strict`, `normal`, `relaxed` or `disabled` policies.
+- Analyzer settings changes:
+    - replaced `tiltThreshold` with `tiltPolicy`
+    - replaced `ignoreGlare` with `glarePolicy`
+    - replaced `ignoreBlur` with `blurPolicy`
+
 ## v1.1.1
 
 - No changes

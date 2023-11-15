@@ -3,6 +3,9 @@
 </p>
 
 [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
+[![MBCaptureCore Version](https://img.shields.io/cocoapods/v/MBCaptureCore.svg?style=flat)](https://cocoapods.org/pods/MBCaptureCore)
+[![MBCaptureUX Version](https://img.shields.io/cocoapods/v/MBCaptureUX.svg?style=flat)](https://cocoapods.org/pods/MBCaptureUX)
+[![Platform](https://img.shields.io/cocoapods/p/MBCaptureCore.svg?style=flat)](https://github.com/MBCaptureCore/capture-ios#)
 
 # _Capture_ SDK for iOS
 
