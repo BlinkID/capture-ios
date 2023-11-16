@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/MBCCAnalyzerSettings.h</key>
 		<data>
-		PQl/YASquU7G3nnik4hy75gDAys=
+		XnsG6XMZyZ2hUgUxLlPNpufEX10=
 		</data>
 		<key>Headers/MBCCCameraFrameAdjuster.h</key>
 		<data>
@@ -62,35 +62,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2TLQMkHW8TSSYzsaR2y9eEFwWCg=
+		zjfxfzw/urM/namlyLA3iKqnt2k=
 		</data>
 		<key>Model_021c530a7efe77c0e90c4bfe19c3bebaaceee433103e4e6d4f1424d921885982.strop</key>
 		<data>
-		vB27+AHs2Qa9qtvSpMgjh50F+7c=
+		wI79Ct27+07HULn2STDcqa4I1P4=
 		</data>
-		<key>Model_0c0458bedf340ad5858a25dd463e63f57ddb42e69c3c5ff0c572a528356b020d.strop</key>
+		<key>Model_07c7ab860e77ec2e92bb822f6d62424b8595a5beb4340f6b2f7f6a4cffa5d050.strop</key>
 		<data>
-		ReEol0mAts0hkQlDqmkTDdD4OXI=
+		ADfMRAeQMjFShI0j/ppaRXHoqRw=
 		</data>
 		<key>Model_2880751121560047e6dc571bc8ff4683aeb863886f7c0789234594ceb1e23577.strop</key>
 		<data>
-		vsV1lpHc8QuoRcgUlsaqyn1HWjU=
+		NsY0XMWFpbBJ8WetsmfMNs62lDk=
 		</data>
 		<key>Model_3b11c3ffacbbf390b932fb9a7024f1a0016f66281ea8c790f8b5903374ad89c2.strop</key>
 		<data>
-		6OD05wScAwf8FqOMtUQGs/eKRec=
+		ATa+CpgpZqTv6tNPxkphzPREvI0=
 		</data>
 		<key>Model_e4f1f62f68ec44b71ecad3fb3f3b48fe3790beb5ab325611e17d63af06e9f644.strop</key>
 		<data>
-		y+FGt1SroxHEL0sggu0PxktX+v8=
+		KTTtYCKW7zy93hbU6TutBWpUPNM=
 		</data>
 		<key>Model_ed586fd6ca47c8eebb513c4ffaaacc2c54e92162b145062d7022519fba0911de.strop</key>
 		<data>
-		WbE65il7x8NcqsbKQQAbgadwpCU=
+		ieH2Mhd7txYMuxsHWDz/TT3ZPSI=
 		</data>
 		<key>Model_f2874f5766b779c063dbe30467979163497dc4b29c43bab23d70c798ee32993a.strop</key>
 		<data>
-		T5rzy8Vn05NELgkysNcNRewJgxI=
+		ygfyg/rSV0CYJ3YTtSg7A6+8wXk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>conan.xcconfig</key>
 		<data>
-		jTQgC4qxrssRXcVajwUz25+nyHI=
+		yt6Wiq5hDvunyKlsWvDm6ain4+g=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -135,7 +135,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6IqFVjxd4j3rAI5rO7r9TOP6zjLZ7GiA2fdhyX0p/ug=
+			T9GPWsznVzQSCDw4g9ph0pl9NekA1g49x8WCWyNGLPM=
 			</data>
 		</dict>
 		<key>Headers/MBCCCameraFrameAdjuster.h</key>
@@ -205,49 +205,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4J7u0ZTG00FolZdN4CigL0DseIBRzJANLut2LLrD+fs=
+			/XRnunyGYspJTHHV56/EaARWbTdncWWs2S5UAEtwYfw=
 			</data>
 		</dict>
-		<key>Model_0c0458bedf340ad5858a25dd463e63f57ddb42e69c3c5ff0c572a528356b020d.strop</key>
+		<key>Model_07c7ab860e77ec2e92bb822f6d62424b8595a5beb4340f6b2f7f6a4cffa5d050.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3WwljOThW9gqV2Z3FCXdOeYKxbkXHh6pWvww/+Db478=
+			2twuAtO2kE+Xeoclz1FAR1Fd72Mu3tgvPN/vnqz/6Wg=
 			</data>
 		</dict>
 		<key>Model_2880751121560047e6dc571bc8ff4683aeb863886f7c0789234594ceb1e23577.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SOVeB8SXCzbEfzZTNj/ATJ/2kBwqvwHEFkyGWNKdOUw=
+			Ec1HZd4FmTC3qkHbSW+wpwYtDjvP6OQNfEXI+8Pr76s=
 			</data>
 		</dict>
 		<key>Model_3b11c3ffacbbf390b932fb9a7024f1a0016f66281ea8c790f8b5903374ad89c2.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UWF3N+8CpuTTam06OEDHFsAlJjSOmuB4vqjKbK20ZO0=
+			+CPakF7yx34IWUZvdkg/cdfEpuv5hciF8MMuXZCA094=
 			</data>
 		</dict>
 		<key>Model_e4f1f62f68ec44b71ecad3fb3f3b48fe3790beb5ab325611e17d63af06e9f644.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V8P0TFdCXX70Im8sEU/s0ZWU3K94oVLkczJBBKwRij4=
+			yB33I7bfNEuMBnvHki5LLENSVmhmWgWU2kVQjJVkzm8=
 			</data>
 		</dict>
 		<key>Model_ed586fd6ca47c8eebb513c4ffaaacc2c54e92162b145062d7022519fba0911de.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w2iVRJX6JoJHOj5/V4K4QD4TliX9w0Utrpj2+K5PXoo=
+			W8lhojSf90Amgezy/i6ekTjIXNrU4znfgvzTZ8qLLgA=
 			</data>
 		</dict>
 		<key>Model_f2874f5766b779c063dbe30467979163497dc4b29c43bab23d70c798ee32993a.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yAjEPBXu2FSRQqAFESZFOQGcpr+WGWwGJ+lKk65AsU4=
+			oAv3pkal/2g2kIy34dcCT5W76SR0UHJLFUcVQuaULSs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0ziThTqjSBi9FL6rzwe8Znww+zKePMADpUFhlLUGds8=
+			pKKWgkWOnWH9krYo/6SHnHkAZq93KxD/E/Sx0emm2rk=
 			</data>
 		</dict>
 	</dict>

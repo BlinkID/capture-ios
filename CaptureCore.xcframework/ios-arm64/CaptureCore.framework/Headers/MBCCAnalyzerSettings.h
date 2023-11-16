@@ -25,6 +25,48 @@ typedef NS_ENUM(NSInteger, MBCCCaptureStrategy) {
     MBCCCaptureStrategySingleFrame
 };
 
+/// Policy used to detect tilted documents.
+typedef NS_ENUM(NSInteger, MBCCTiltPolicy) {
+    /// Disables tilt detection
+    MBCCTiltPolicyDisabled,
+    /// Strict tilt detection
+    /// Enables capture of document with minimum tilt tolerance.
+    MBCCTiltPolicyStrict,
+    /// Trade-off for strict and relaxed
+    MBCCTiltPolicyNormal,
+    /// Relaxed tilt detection
+    /// Enables capture of documents with higher tilt tolerance.
+    MBCCTiltPolicyRelaxed
+};
+
+/// Policy used to discard frames with blurred documents.
+typedef NS_ENUM(NSInteger, MBCCBlurPolicy) {
+    /// Disables blur detection
+    MBCCBlurPolicyDisabled,
+    /// Strict blur detection
+    /// Enables capture of documents with minimum blur degradation.
+    MBCCBlurPolicyStrict,
+    /// Trade-off for strict and relaxed
+    MBCCBlurPolicyNormal,
+    /// Relaxed blur detection
+    /// Enables capture of documents with relaxed blur degradation, allowing capture of more blurry documents.
+    MBCCBlurPolicyRelaxed
+};
+
+/// Policy used to discard frames with glare detected on the document.
+typedef NS_ENUM(NSInteger, MBCCGlarePolicy) {
+    /// Disables glare detection
+    MBCCGlarePolicyDisabled,
+    /// Strict glare detection
+    /// Enables capture of documents with minimum glare degradation.
+    MBCCGlarePolicyStrict,
+    /// Trade-off for strict and relaxed
+    MBCCGlarePolicyNormal,
+    /// Relaxed glare detection
+    /// Enables capture of documents with relaxed glare detection, allowing capture of documents with more glare.
+    MBCCGlarePolicyRelaxed
+};
+
 /// See ``MBCCLightingThresholds`` for more details.
 @class MBCCLightingThresholds;
 
@@ -44,24 +86,10 @@ MBCC_CORE_FINAL
 /// Default: `YES`
 @property (nonatomic) BOOL returnTransformedDocumentImage;
 
-/// Defines whether to discard frames with blurred documents.
-///
-/// If enabled, the capture process is allowed to finish with blurry documents.
-///
-/// Default: `NO`
-@property (nonatomic) BOOL ignoreBlur;
-
 /// Defines whether to return an image of the transformed document with applied margin used during document framing.
 ///
 /// Default: `NO`
 @property (nonatomic) BOOL keepMarginOnTransformedDocumentImage;
-
-/// Defines whether to discard frames with glare detected on the document.
-///
-/// If enabled, the capture process is allowed to finish with glare on the document.
-///
-/// Default: `NO`
-@property (nonatomic) BOOL ignoreGlare;
 
 /// Enables document capture with a margin defined as the percentage of the dimensions of the framed document.
 ///
@@ -81,16 +109,6 @@ MBCC_CORE_FINAL
 ///
 /// Default: `0.05f`
 @property (nonatomic) CGFloat handOcclusionThreshold;
-
-/// Threshold for detecting tilted documents.
-/// Frames with documents tilted more than defined by this threshold are discarded.
-///
-/// Allowed values are from 0 to 1.
-///
-/// - Throws: `MBCCInvalidTiltTresholdException` if the quantity is less than 0 and more than 1.
-///
-/// Default:` 0.17f`
-@property (nonatomic) CGFloat tiltThreshold;
 
 /// Configures capture strategy used to select the best frame.
 /// See ``MBCCCaptureStategy`` for more details.
@@ -117,6 +135,24 @@ MBCC_CORE_FINAL
 ///
 /// Default: `YES`
 @property (nonatomic) BOOL adjustMinimumDocumentDpi;
+
+/// Policy used to detect tilted documents.
+/// See ``MBCCTiltPolicy`` for more details.
+///
+/// Default: `MBCCTiltPolicyNormal`
+@property (nonatomic) MBCCTiltPolicy tiltPolicy;
+
+/// Policy used to discard frames with blurred documents.
+/// See ``MBCCBlurPolicy`` for more details.
+///
+/// Default: `MBCCBlurPolicyNormal`
+@property (nonatomic) MBCCBlurPolicy blurPolicy;
+
+/// Policy used to discard frames with glare detected on the document.
+/// See ``MBCCGlarePolicy`` for more details.
+///
+/// Default: `MBCCGlarePolicyNormal`
+@property (nonatomic) MBCCGlarePolicy glarePolicy;
 
 @end
 
