@@ -1,5 +1,10 @@
 # Release notes
 
+## v1.2.1
+
+- Bugfix:
+    - License key release unlock
+
 ## v1.2.0
 
 - Introduced `BlurPolicy`, `GlarePolicy`, `TiltPolicy` which are used to enable `strict`, `normal`, `relaxed` or `disabled` policies.

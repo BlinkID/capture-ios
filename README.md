@@ -94,8 +94,8 @@ Copy and paste the following lines into the TextEdit window:
 ```ruby
 platform :ios, '13.0'
 target 'Your-App-Name' do
-    pod 'MBCaptureCore', '~> 1.1.0'
-    pod 'MBCaptureUX', '~> 1.1.0'
+    pod 'MBCaptureCore', '~> 1.2.1'
+    pod 'MBCaptureUX', '~> 1.2.1'
 end
 ```
 
