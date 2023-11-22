@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.2.1
+
+- No changes
+
 ## v1.2.0
 
 - Introduced `BlurPolicy`, `GlarePolicy`, `TiltPolicy` which are used to enable `strict`, `normal`, `relaxed` or `disabled` policies.
