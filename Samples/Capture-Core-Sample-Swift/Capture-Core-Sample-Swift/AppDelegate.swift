@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // Valid until: 2024-01-19
-        MBCCCaptureCoreSDK.shared().setLicenseKey("sRwCAChjb20ubWljcm9ibGluay5DYXB0dXJlLUNvcmUtU2FtcGxlLVN3aWZ0AQpNaWNyb2JsaW5rFGmzXoFHduMdE6TKTnl2ukToG72eBcCJZeEudlP5EEYEBtmNR41dP8dy7LJfVDHtjHxvwpZIqKtvSqjgDsRpQGDC2c3/2jeB0lvOR8X6vKYu1nYQjpCUu1bKVaAApGLtZw==") { _ in
+        // Valid until: 2025-01-24
+        MBCCCaptureCoreSDK.shared().setLicenseKey("sRwCAChjb20ubWljcm9ibGluay5DYXB0dXJlLUNvcmUtU2FtcGxlLVN3aWZ0AQptaWNyb2JsaW5rFGmzXoFHduMdE6TKrigG29w15eJ2LEIpp6o2ZXx2gF/pGkYFA4HQXLvC9DXnW29LHXBgxTnQkJSwuuOwBOU3JpENpgzJw6d68Pc7HG0BNYBTl20ouWCoV41G29Wn") { _ in
             
         };
         
