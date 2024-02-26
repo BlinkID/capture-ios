@@ -66,25 +66,25 @@ extension CaptureResultViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (indexPath.row == 0) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "captureResultCell", for: indexPath) as! CaptureResultTableViewCell
-            cell.documentImageView.image = analyzerResult?.firstCapture?.capturedImage.image
+            cell.documentImageView.image = analyzerResult?.firstCapture?.capturedImage?.image
             cell.imageLabel.text = "First Capture Image"
             return cell
         }
         else if (indexPath.row == 1) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "captureResultCell", for: indexPath) as! CaptureResultTableViewCell
-            cell.documentImageView.image = analyzerResult?.firstCapture?.transformedImage.image
+            cell.documentImageView.image = analyzerResult?.firstCapture?.transformedImage?.image
             cell.imageLabel.text = "Transformed First Capture Image"
             return cell
         }
         else if (indexPath.row == 2) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "captureResultCell", for: indexPath) as! CaptureResultTableViewCell
-            cell.documentImageView.image = analyzerResult?.secondCapture?.capturedImage.image
+            cell.documentImageView.image = analyzerResult?.secondCapture?.capturedImage?.image
             cell.imageLabel.text = "Second Capture Image"
             return cell
         }
         else if (indexPath.row == 3) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "captureResultCell", for: indexPath) as! CaptureResultTableViewCell
-            cell.documentImageView.image = analyzerResult?.secondCapture?.transformedImage.image
+            cell.documentImageView.image = analyzerResult?.secondCapture?.transformedImage?.image
             cell.imageLabel.text = "Transformed Second Capture Image"
             return cell
         }

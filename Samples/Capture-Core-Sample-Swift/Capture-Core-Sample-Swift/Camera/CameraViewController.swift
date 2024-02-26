@@ -149,7 +149,13 @@ class CameraViewController: UIViewController, AVCaptureAudioDataOutputSampleBuff
         let videoDataOutput = AVCaptureVideoDataOutput()
         // You need to use YUV format
         videoDataOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey : kCVPixelFormatType_420YpCbCr8BiPlanarFullRange] as [String : Any]
+        
         captureSession?.addOutput(videoDataOutput)
+        
+        if let captureConnection = videoDataOutput.connection(with: .video) {
+             captureConnection.videoOrientation = .portrait
+         }
+        
         let queue = DispatchQueue(label: "myQueue")
         videoDataOutput.setSampleBufferDelegate(self, queue: queue)
         
@@ -193,6 +199,8 @@ class CameraViewController: UIViewController, AVCaptureAudioDataOutputSampleBuff
         let image = MBCCSampleBufferImage(sampleBuffer: sampleBuffer)
         // For portrait
         image.imageOrientation = .right
+        image.videoRotationAngle = .portrait
+        
         if !isPauseRecognition {
             MBCCAnalyzerRunner.shared().analyzeStreamImage(image)
         }

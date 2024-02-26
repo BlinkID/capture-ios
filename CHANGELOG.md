@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.2.2
+
+- `MBCCSideCaptureResult`:
+	- Properties `capturedImage` and `transformedImage` are now nullable
+
 ## v1.2.1
 
 - No changes

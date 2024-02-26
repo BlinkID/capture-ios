@@ -72,25 +72,25 @@ extension ResultViewController: UITableViewDataSource {
         if (indexPath.row == 0) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "resultTableViewCell", for: indexPath) as! ResultTableViewCell
             cell.captureDocumentTitleLabel.text = "First Side Capture"
-            cell.captureDocumentImageView.image = analyserResult?.firstCapture?.capturedImage.image
+            cell.captureDocumentImageView.image = analyserResult?.firstCapture?.capturedImage?.image
             return cell
         }
         else if (indexPath.row == 1) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "resultTableViewCell", for: indexPath) as! ResultTableViewCell
             cell.captureDocumentTitleLabel.text = "First Side Transformed Capture"
-            cell.captureDocumentImageView.image = analyserResult?.firstCapture?.transformedImage.image
+            cell.captureDocumentImageView.image = analyserResult?.firstCapture?.transformedImage?.image
             return cell
         }
         else if (indexPath.row == 2) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "resultTableViewCell", for: indexPath) as! ResultTableViewCell
             cell.captureDocumentTitleLabel.text = "Second Side Capture"
-            cell.captureDocumentImageView.image = analyserResult?.secondCapture?.capturedImage.image
+            cell.captureDocumentImageView.image = analyserResult?.secondCapture?.capturedImage?.image
             return cell
         }
         else if (indexPath.row == 3) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "resultTableViewCell", for: indexPath) as! ResultTableViewCell
             cell.captureDocumentTitleLabel.text = "Second Side Transformed Capture"
-            cell.captureDocumentImageView.image = analyserResult?.secondCapture?.transformedImage.image
+            cell.captureDocumentImageView.image = analyserResult?.secondCapture?.transformedImage?.image
             return cell
         }
         

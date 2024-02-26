@@ -69,11 +69,11 @@ MBCC_CORE_FINAL
 
 /// Original image of the captured document, untransformed, as it was used in analysis.
 /// See ``MBCCImage`` for more details.
-@property (nonatomic) MBCCImage *capturedImage;
+@property (nonatomic, nullable) MBCCImage *capturedImage;
 
 /// Image of a cropped and perspective-corrected document.
 /// See ``MBCCTransformedImage`` for more details.
-@property (nonatomic) MBCCTransformedImage *transformedImage;
+@property (nonatomic, nullable) MBCCTransformedImage *transformedImage;
 
 /// Document side classification returned as front or back.
 ///

@@ -10,6 +10,18 @@
 
 #import <UIKit/UIKit.h>
 #import <CaptureCore/MBCCCoreDefines.h>
+#import <AVFoundation/AVFoundation.h>
+
+typedef NS_ENUM(NSInteger, MBCCVideoRotationAngle) {
+    // Landscape left
+    MBCCVideoRotationAngleLandscapeLeft,
+    // Portrait
+    MBCCVideoRotationAnglePortrait,
+    // Landscape right
+    MBCCVideoRotationAngleLandscapeRight,
+    // Portrait upside down
+    MBCCVideoRotationAnglePortraitUpsideDown
+};
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,6 +33,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Image orientation.
 @property (nonatomic) UIImageOrientation imageOrientation;
+
+/// Connection orientation.
+/// Default: `MBCCVideoRotationAngleLandscapeRight` - landscape right.
+@property (nonatomic) MBCCVideoRotationAngle videoRotationAngle;
 
 /// Region of the image used for scanning, where the whole image is specified with CGRectMake(0.0, 0.0, 1.0, 1.0).
 @property (nonatomic) CGRect roi;
