@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/MBCCAnalyzer.h</key>
 		<data>
-		CCG+cAZLfsYbI1VztDd7WHJiZmE=
+		3Z5inmyKQaujOP299KgWFmOqd2g=
 		</data>
 		<key>Headers/MBCCAnalyzerResult.h</key>
 		<data>
-		N9E9TXKdknGV9Sl4ByEIQZQeEsE=
+		H1fsFv4XTYyXPTlibR477syrnNk=
 		</data>
 		<key>Headers/MBCCAnalyzerRunner.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/MBCCImage.h</key>
 		<data>
-		65SphSL5ZzAc0dl1NvHXnXjShlk=
+		SR/lA63eR3XJM0SHgVuXJPTNPv4=
 		</data>
 		<key>Headers/MBCCLicenseError.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		T015JnsHppwFa5OvPrTU1xWYQNQ=
+		ny+HAb7OQinG2uYJeuTTH6DuWTA=
 		</data>
 		<key>Model_021c530a7efe77c0e90c4bfe19c3bebaaceee433103e4e6d4f1424d921885982.strop</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>conan.xcconfig</key>
 		<data>
-		9EVQJVjLBEvMu8UkExhjLCYLavY=
+		EOF3y0IRSRA0AuzAgqyaaHcUcfg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -114,14 +114,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ykdeFzkKvUGuhAIXow53PhECLTDHts+Dugq2+gfXsas=
+			8U2xa06Oebn7DERI80Yv03mfV+80AS8R8E2U3dhhatM=
 			</data>
 		</dict>
 		<key>Headers/MBCCAnalyzerResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a81aJ+KT0vdu9snGUDcCrBQ2Xr29wZTvr70YDNSwtbI=
+			c4B5NdbX0jlyPcCHPinCkzN/s5lfFx//5SoNJJ7w4ts=
 			</data>
 		</dict>
 		<key>Headers/MBCCAnalyzerRunner.h</key>
@@ -170,7 +170,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V+XECArZ6z0EzhNac8na/ekydA/ighS7ZoUpqvWx4Ng=
+			a8jzHt/09h1f4L+wqzDBUkP08v4AfCQ0rwWZn3tJIW8=
 			</data>
 		</dict>
 		<key>Headers/MBCCLicenseError.h</key>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sTF2nk6fj5W6+X17fiUMsvmBLxtVAIaeAJDbe608tXs=
+			YLR+nPz2g+tuEDPIqXCd2jOkOV1hPYPXv9qN5eK8rNI=
 			</data>
 		</dict>
 	</dict>

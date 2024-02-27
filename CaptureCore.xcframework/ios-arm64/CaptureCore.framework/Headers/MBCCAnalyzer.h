@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger, MBCCAnalysisType) {
     MBCCAnalysisTypeDirectAPIOnVideoStream,
     MBCCAnalysisTypeVideoStream,
 };
+
 typedef NS_ENUM(NSInteger, MBCCAnalyzerError) {
     MBCCAnalyzerErrorInvalidLicenseKey,
     MBCCAnalyzerErrorMissingResources,

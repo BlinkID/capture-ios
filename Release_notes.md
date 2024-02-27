@@ -1,5 +1,12 @@
 # Release notes
 
+## v1.2.2
+
+- Add portrait support for [AVCaptureConnection's videoOrientation](https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1389415-videoorientation?language=objc) and [AVCaptureConnection's videoRotationAngle](https://developer.apple.com/documentation/avfoundation/avcaptureconnection/4172595-videorotationangle?language=objc)
+	- Set `MBCCImage` `videoRotationAngle` to `MBCCVideoRotationAnglePortrait`: 
+- `MBCCSideCaptureResult`:
+	- Properties `capturedImage` and `transformedImage` are now nullable
+
 ## v1.2.1
 
 - Bugfix:
