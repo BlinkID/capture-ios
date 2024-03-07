@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.2.3
+
+- No changes
+
 ## v1.2.2
 
 - `MBCCSideCaptureResult`:

@@ -1,5 +1,10 @@
 # Release notes
 
+## v1.2.3
+
+- Add privacy manifest
+- Downgrade Swift tools version to 5.7
+
 ## v1.2.2
 
 - Add portrait support for [AVCaptureConnection's videoOrientation](https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1389415-videoorientation?language=objc) and [AVCaptureConnection's videoRotationAngle](https://developer.apple.com/documentation/avfoundation/avcaptureconnection/4172595-videorotationangle?language=objc)

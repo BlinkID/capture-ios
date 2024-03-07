@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ny+HAb7OQinG2uYJeuTTH6DuWTA=
+		NnHwENAyn9P/BEAx0n3Vf87qAZc=
 		</data>
 		<key>Model_021c530a7efe77c0e90c4bfe19c3bebaaceee433103e4e6d4f1424d921885982.strop</key>
 		<data>
@@ -96,9 +96,13 @@
 		<data>
 		0zmGUM39pHsw+5Mes9K2S3aQ9lg=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		aEum/b1jBVKviunKYbb8o33BRqk=
+		</data>
 		<key>conan.xcconfig</key>
 		<data>
-		EOF3y0IRSRA0AuzAgqyaaHcUcfg=
+		Ku4ilIeoK9aHLvU5u9qUYfHCpYc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -257,11 +261,18 @@
 			DLITLU+1czYDy0E1tk4TP+UNtZD/p3TUMda/BV7v0/w=
 			</data>
 		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			geJrDTDaZ9zD0eeF1qpLKlhjGEF+guI2M4zpA1YRSPI=
+			</data>
+		</dict>
 		<key>conan.xcconfig</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YLR+nPz2g+tuEDPIqXCd2jOkOV1hPYPXv9qN5eK8rNI=
+			LpBfmUv9Rx02ebfe4qqZR7IYRtYVlodpMcRrpkddLcQ=
 			</data>
 		</dict>
 	</dict>
