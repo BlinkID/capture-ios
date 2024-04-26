@@ -67,6 +67,16 @@ typedef NS_ENUM(NSInteger, MBCCGlarePolicy) {
     MBCCGlarePolicyRelaxed
 };
 
+/// Enforces a specific document group, overriding the analyzer’s document classification.
+typedef NS_ENUM(NSInteger, MBCCEnforcedDocumentGroup) {
+    MBCCEnforcedDocumentGroupNone,
+    MBCCEnforcedDocumentGroupDl,
+    MBCCEnforcedDocumentGroupId,
+    MBCCEnforcedDocumentGroupPassport,
+    MBCCEnforcedDocumentGroupPassportCard,
+    MBCCEnforcedDocumentGroupVisa
+};
+
 /// See ``MBCCLightingThresholds`` for more details.
 @class MBCCLightingThresholds;
 
@@ -90,6 +100,12 @@ MBCC_CORE_FINAL
 ///
 /// Default: `NO`
 @property (nonatomic) BOOL keepMarginOnTransformedDocumentImage;
+
+/// Determines whether to preserve the captured document DPI in transformed document image.
+/// If disabled, the document dpi is downscaled to 400 DPI.
+///
+/// Default: `NO`
+@property (nonatomic) BOOL keepDpiOnTransformedDocumentImage;
 
 /// Enables document capture with a margin defined as the percentage of the dimensions of the framed document.
 ///
@@ -153,6 +169,13 @@ MBCC_CORE_FINAL
 ///
 /// Default: `MBCCGlarePolicyNormal`
 @property (nonatomic) MBCCGlarePolicy glarePolicy;
+
+/// Enforces a specific document group, overriding the analyzer’s document classification.
+///
+/// This setting impacts the number of sides scanned to match the enforced group, and the way document image is transformed.
+///
+/// Default: `MBCCEnforcedDocumentGroupNone`
+@property (nonatomic) MBCCEnforcedDocumentGroup enforcedDocumentGroup;
 
 @end
 

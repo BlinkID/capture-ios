@@ -1,5 +1,12 @@
 # Release notes
 
+## v1.3.0
+
+- Added option `Keep DPI on image`:
+    - Determines whether to preserve the captured document DPI on transformed document image. If disabled, the document DPI is downscaled to 400 DPI.
+- Added option `Enforced document group`:
+    - Enforces a specific document group, overriding the analyzer's document classification. This setting impacts the number of sides scanned to match the enforced group, and the way document image is transformed.
+
 ## v1.2.3
 
 - Add privacy manifest
