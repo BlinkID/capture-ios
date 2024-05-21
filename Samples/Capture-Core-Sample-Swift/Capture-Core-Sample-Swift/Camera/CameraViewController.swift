@@ -140,6 +140,7 @@ class CameraViewController: UIViewController, AVCaptureAudioDataOutputSampleBuff
         // Create session
         captureSession = AVCaptureSession()
         captureSession?.sessionPreset = .high
+        
         // Init the device inputs
         let videoInput = try? AVCaptureDeviceInput(device: cameraWithPosition(AVCaptureDevice.Position.back)!)
         if let anInput = videoInput {
@@ -148,7 +149,8 @@ class CameraViewController: UIViewController, AVCaptureAudioDataOutputSampleBuff
         // setup video data output
         let videoDataOutput = AVCaptureVideoDataOutput()
         // You need to use YUV format
-        videoDataOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey : kCVPixelFormatType_420YpCbCr8BiPlanarFullRange] as [String : Any]
+        videoDataOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey : kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange] as [String : Any]
+        videoDataOutput.connections.first?.videoOrientation = .portrait
         
         captureSession?.addOutput(videoDataOutput)
         
