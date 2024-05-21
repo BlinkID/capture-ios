@@ -1,5 +1,13 @@
 # Release notes
 
+## v1.3.1
+
+- License key remote check fix
+- Change from `kCVPixelFormatType_420YpCbCr8BiPlanarFullRange` to `kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange`
+- ROI fix:
+    - Output connection video orientation fix
+- iPhone 15 Pro fix 
+
 ## v1.3.0
 
 - Added option `Keep DPI on image`:
