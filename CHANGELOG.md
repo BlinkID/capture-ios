@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.4.0
+
+- No changes
+
 ## v1.3.1
 
 - Change from `kCVPixelFormatType_420YpCbCr8BiPlanarFullRange` to `kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange`

@@ -27,6 +27,8 @@ In the results, you can get a cropped, perspective-corrected image of the docume
     - [License key](#license-key)
     - [Registering for capturing events](#registering-for-capturing-events)
 - [Customizing the look and UX](#customizing-the-look)
+- [Using Capture filter](#using-capture-filter)
+- [Using provided BlinkIdCaptureFilter](#using-provided-filter)
 - [Localization](#localization)
 - [Completely custom UX with Direct API (advanced)](#direct-api)
 	- [The `AnalyzerRunner`](#analyzer-runner)
@@ -302,23 +304,44 @@ To customize `MBICCaptureViewController`, use `MBICCaptureViewControllerTheme` i
 	- textColor - set custom UIColor
 	- cornerRadius - set custom corner radius
 
-## <a name="localization"></a> Localization
+# <a name="#using-capture-filter"></a> Using Capture filter
 
-The SDK supports English language.
+If you need additional checks on Capture result images, you can use CaptureFilter. This feature is optional.
+
+Capture filter filters capture results after each successful side capture (accepts or drops captured side). If the captured image is filtered out, the capture process is restarted for the current side and the same side is captured again in the same camera session.
+
+You can set your implementation of the CaptureFilter on the CaptureSettings like this:
+
+```swift
+let filterSettings = MBICFilterSettings()
+let captureSettings: MBICCaptureSettings = MBICCaptureSettings()
+captureSettings.filterSettings = filterSettings
+```
+
+We are providing one specific implementation of the CaptureFilter which uses the BlinkID SDK and accepts document images that are extractable by the BlinkID SDK. Usage of the BlinkIdCaptureFilter is described in the following section.
+
+## <a name="#using-provided-filter"></a> Using provided `BlinkIdCaptureFilter`
+
+BlinkIdCaptureFilter implementation uses BlinkID SDK for filtering of capture results. For each successful side capture, this filter runs BlinkID extraction on the captured side image and side capture results are accepted only if the image is extractable by the BlinkID SDK. You will need to manually add `BlinkIdCaptureFilter.xcframework` to you project and add it to `MBICFilterSettings`:
+
+```swift
+let filterSettings = MBICFilterSettings()
+filterSettings.captureSettings = MBCFBlinkIdCaptureFilter()
+```
+
+Because BlinkIdCaptureFiler internally uses BlinkID SDK, you will also need to set the valid license key for the BlinkID SDK and add BlinkID SDK to your project. See [here](https://github.com/BlinkID/blinkid-ios?tab=readme-ov-file#quick-start) for intergration options.
+
+```swift
+MBMicroblinkSDK.shared().setLicenseKey("") { error in }
+```
+
+# <a name="localization"></a> Localization
+
+The SDK supports 23 languages. It uses [`xcstrings`](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog) for localization. 
 
 If you would like us to support additional languages or report incorrect translation, please contact us at [help.microblink.com](http://help.microblink.com).
 
-If you want to add additional languages yourself or change existing translations, you need to set `customLocalizationFileName` property on `MBICCaptureUISDK` object to your strings file name.
-
-For example, let's say that we want to change text "Scan the front side of a document" to "Scan the front side" in BlinkID sample project. This would be the steps:
-
-* Find the translation key in en.strings file inside Capture.xcframework
-* Add a new file MyTranslations.strings to the project by using "Strings File" template
-* With MyTranslations.string open, in File inspector tap "Localize..." button and select English
-* Add the translation key "mbic_scan_the_front_side" and the value "Scan the front side" to MyTranslations.strings
-* Finally in AppDelegate.swift in method `application(_:, didFinishLaunchingWithOptions:)` add `MBICCaptureUISDK.shared().customLocalizationFileName = "MyTranslations"`
-
-Also, you can change our .strings files directly in frameowrk. Go to Capture.framework and replace them.
+You can change our `Localizable.xcstrings` file directly in framework. Go to CaptureUX.framework and replace it with your own.
 
 # <a name="direct-api"></a> Completely custom UX with Direct API (advanced)
 
