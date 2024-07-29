@@ -308,6 +308,8 @@ To customize `MBICCaptureViewController`, use `MBICCaptureViewControllerTheme` i
 
 If you need additional checks on Capture result images, you can use CaptureFilter. This feature is optional.
 
+Capture Filter can be used with an external validation tool, such as BlinkID, to confirm that the image is of sufficient quality before ending the scanning process. During this, the scanning session is not stopping or restarting, therefore not causing friction on the end-user side.
+
 Capture filter filters capture results after each successful side capture (accepts or drops captured side). If the captured image is filtered out, the capture process is restarted for the current side and the same side is captured again in the same camera session.
 
 You can set your implementation of the CaptureFilter on the CaptureSettings like this:
@@ -337,11 +339,11 @@ MBMicroblinkSDK.shared().setLicenseKey("") { error in }
 
 # <a name="localization"></a> Localization
 
-The SDK supports 23 languages. It uses [`xcstrings`](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog) for localization. 
+The SDK supports 23 languages. It uses [`xcstrings`](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog) for localization. When using `xcstrings`, framework target automatically builds `.lproj` folders with `Localizable.strings` file for every supported language.
 
 If you would like us to support additional languages or report incorrect translation, please contact us at [help.microblink.com](http://help.microblink.com).
 
-You can change our `Localizable.xcstrings` file directly in framework. Go to CaptureUX.framework and replace it with your own.
+You can change our `Localizable.xcstrings` and `Localizable.strings` files for each language you would like to change directly in `CaptureUX.xcframework`.
 
 # <a name="direct-api"></a> Completely custom UX with Direct API (advanced)
 
