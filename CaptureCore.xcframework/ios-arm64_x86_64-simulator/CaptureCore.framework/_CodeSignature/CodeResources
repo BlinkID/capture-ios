@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/MBCCAnalyzer.h</key>
 		<data>
-		3Z5inmyKQaujOP299KgWFmOqd2g=
+		ZhGiWkFptID4b+DqaRuniFVJlAA=
 		</data>
 		<key>Headers/MBCCAnalyzerResult.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/MBCCAnalyzerRunner.h</key>
 		<data>
-		cA4eQnNqzOCSy1lsNJj75Oyew8M=
+		i5k1uHMI08lnj3SJPzwig/fLmsE=
 		</data>
 		<key>Headers/MBCCAnalyzerSettings.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/MBCCFrameAnalysisResult.h</key>
 		<data>
-		c62AYOyHUAAWRmdy+R3mlgFu058=
+		DQMUlSWKd1Q6UPnbpgkuCtogNog=
 		</data>
 		<key>Headers/MBCCImage.h</key>
 		<data>
@@ -62,35 +62,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		c97CC0DAZP4FUb5I4LCl6xnYkOU=
+		pkITMjr0Mi5dZ/g1rAF3tevFIGM=
 		</data>
 		<key>Model_021c530a7efe77c0e90c4bfe19c3bebaaceee433103e4e6d4f1424d921885982.strop</key>
 		<data>
-		RRXmlEub8+2j83h9ZwFAuczip/E=
+		9O3Qgpy14Ld9II7E4Ycm+bwXSsY=
 		</data>
 		<key>Model_07c7ab860e77ec2e92bb822f6d62424b8595a5beb4340f6b2f7f6a4cffa5d050.strop</key>
 		<data>
-		rYmebR1bAcoOh+sWjAa/0Utg/dc=
+		b8z7sdHa2hhX1L0qC2ES8g9O8Vo=
 		</data>
 		<key>Model_2880751121560047e6dc571bc8ff4683aeb863886f7c0789234594ceb1e23577.strop</key>
 		<data>
-		COAEavHfyJBvsiGlb4FA6YKkMLs=
+		cBYLV5wbhhscQZ20IzWATUFJR2w=
 		</data>
 		<key>Model_3b11c3ffacbbf390b932fb9a7024f1a0016f66281ea8c790f8b5903374ad89c2.strop</key>
 		<data>
-		5gnlccEl9qPtNN1NDyplE2QLN0A=
+		U6qTnmLUgTz1Fa0ae5Wn00Q68Kw=
 		</data>
-		<key>Model_e4f1f62f68ec44b71ecad3fb3f3b48fe3790beb5ab325611e17d63af06e9f644.strop</key>
+		<key>Model_6b742ee6d9a9f2cb447f121d06205ae87cccc1ced8513b2f2ee4c3b18d5eebdd.strop</key>
 		<data>
-		U3haoITE+rl4p2zaLZQkK0kqplc=
+		w4wuazask8xQRzX73xnKewT8soI=
 		</data>
 		<key>Model_ed586fd6ca47c8eebb513c4ffaaacc2c54e92162b145062d7022519fba0911de.strop</key>
 		<data>
-		+oom2WAl1VTw8ycADxy0vNFBGS0=
+		sbdBPPGh0E35n41SBqwaDd6iCLI=
 		</data>
 		<key>Model_f2874f5766b779c063dbe30467979163497dc4b29c43bab23d70c798ee32993a.strop</key>
 		<data>
-		cTbaBlNz7BEgOWEP4nix3KFL/kw=
+		HRwoq3iNr7ncA1LR6jfZ3hgzCxk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,9 +100,25 @@
 		<data>
 		aEum/b1jBVKviunKYbb8o33BRqk=
 		</data>
-		<key>conan.xcconfig</key>
+		<key>PrivateHeaders/MBCCDisplayableObject.h</key>
 		<data>
-		Xc7Ey//JCkgfELc+HLEwVSOKp70=
+		e4sfJlxammJ5ZgCcs6b9+r1JIaw=
+		</data>
+		<key>PrivateHeaders/MBCCDisplayableQuad.h</key>
+		<data>
+		OHgNHl9zirDpaaQLI9HYWuGrZds=
+		</data>
+		<key>PrivateHeaders/MBCCFrameAnalysisDebugStatus.h</key>
+		<data>
+		RC1zEELCwkpxpKMFVJvzLsNUuOQ=
+		</data>
+		<key>PrivateHeaders/MBCCQuadrangle.h</key>
+		<data>
+		IVw8o9CQZ4AI8xcAuw8xz9pzsRs=
+		</data>
+		<key>PrivateHeaders/MBCCTransformMatrixFactory.h</key>
+		<data>
+		n1zix8G1nMnBYesRabGqIPPIaZA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -118,7 +134,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8U2xa06Oebn7DERI80Yv03mfV+80AS8R8E2U3dhhatM=
+			E9cl3zII4XZCz9/1WTo+uUrLiWHaMYqBfbU0SQJDmdk=
 			</data>
 		</dict>
 		<key>Headers/MBCCAnalyzerResult.h</key>
@@ -132,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			emOKyLTwKrx8OGjRNsKGGWk/nuZP9eb0ZdG4waLzuK0=
+			M9woK4y8xJ/IkEYMo8C7BHXU1etj0q6BFyG3lAmFAb8=
 			</data>
 		</dict>
 		<key>Headers/MBCCAnalyzerSettings.h</key>
@@ -167,7 +183,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1ytl5yY0T8jgx0eJ7qK4R6bgh5xVDczElPHWQbN+ryw=
+			yKIHPUmqlwMThTlXypRO2zBMifRs7rlulHNchIG9JFU=
 			</data>
 		</dict>
 		<key>Headers/MBCCImage.h</key>
@@ -209,49 +225,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9FV8C0G69I1BklgPQpy+EebwfCbz7KLV/EtAbA0aFCU=
+			97PBhwsujk+spnayL06yed36hx8Gz8ZHPt4ZHj7epls=
 			</data>
 		</dict>
 		<key>Model_07c7ab860e77ec2e92bb822f6d62424b8595a5beb4340f6b2f7f6a4cffa5d050.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XfoV7NcKKUl/eUWoalP8nlBsVb2W/mbvjddP3CBUYF0=
+			d6DYJUFAICd3T7e8fKIq3V5agEBRfzwtmsP4dlId7WY=
 			</data>
 		</dict>
 		<key>Model_2880751121560047e6dc571bc8ff4683aeb863886f7c0789234594ceb1e23577.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PPA44M4KQBcrYrPc5YBgA61cFOYfuZdrde/2mmnYaf8=
+			ejHwMQ1O135yE9phzRKZCngG8c/PRq9m9L7qW7eOWn4=
 			</data>
 		</dict>
 		<key>Model_3b11c3ffacbbf390b932fb9a7024f1a0016f66281ea8c790f8b5903374ad89c2.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BbEOkOQrsBgYM7KbCCzPmKXPYkSakTFcvGWJZicfmLI=
+			1v4XnhShMA7l0pM1leRHM+dCD/BX8q0HzdkU4uBv5PY=
 			</data>
 		</dict>
-		<key>Model_e4f1f62f68ec44b71ecad3fb3f3b48fe3790beb5ab325611e17d63af06e9f644.strop</key>
+		<key>Model_6b742ee6d9a9f2cb447f121d06205ae87cccc1ced8513b2f2ee4c3b18d5eebdd.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JeLy/Z54sCh9OVUG/bleIj3hV2twFHY0Z6dDdaIo/eg=
+			e96QP4lnhdNpldIH/guLYV4P5ItDdjIg3xQwVoZ9wEg=
 			</data>
 		</dict>
 		<key>Model_ed586fd6ca47c8eebb513c4ffaaacc2c54e92162b145062d7022519fba0911de.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AhZS0/0n+LThnQOL0MDv23HaAkOf57WVNNnlkIlaLxo=
+			h8+cjWXOU6yAVic4EDGTDvhopN81/gGYkfBldoM0tqM=
 			</data>
 		</dict>
 		<key>Model_f2874f5766b779c063dbe30467979163497dc4b29c43bab23d70c798ee32993a.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y9aWUf4+lvtGFCbt6dMXTl0sfl91OZViWEDgrlDmG8I=
+			z3ajUmlzxA5nrs/Gk0bc5UN4uWHE5L9S/XnV4vOSpTY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -268,11 +284,39 @@
 			geJrDTDaZ9zD0eeF1qpLKlhjGEF+guI2M4zpA1YRSPI=
 			</data>
 		</dict>
-		<key>conan.xcconfig</key>
+		<key>PrivateHeaders/MBCCDisplayableObject.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7kYTyD7wYR4lv8MHP9S4P8iCVmmynQJEWHuelEUU+Jk=
+			e/IBG4SCA3hMYuLgUoEG50HFazpI/LLjkdMhUUL80b0=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MBCCDisplayableQuad.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WYFwe2kh3j4SVLa/PgM+lnS83YLuZznKasDz4aoj0jY=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MBCCFrameAnalysisDebugStatus.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			d/aEgHzvYJcFd82ZKHVYpe9nKvwNWt7jecjywYgJk1M=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MBCCQuadrangle.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8h3AKG/5N2X1tNWaIAJd29MACvzcqkmLttdWx4bcyYw=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MBCCTransformMatrixFactory.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oxsy+AtdXuD1RlseJYGq+p/KChq4NKOPnFFqO9wnpLw=
 			</data>
 		</dict>
 	</dict>

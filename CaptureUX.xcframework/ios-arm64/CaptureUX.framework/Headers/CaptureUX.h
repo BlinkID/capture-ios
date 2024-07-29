@@ -26,3 +26,6 @@ FOUNDATION_EXPORT const unsigned char CaptureUXVersionString[];
 #import <CaptureUX/MBICCaptureSettings.h>
 #import <CaptureUX/MBICCaptureUISDK.h>
 #import <CaptureUX/MBICCaptureViewController.h>
+#import <CaptureUX/MBICFilterSettings.h>
+#import <CaptureUX/MBICCaptureFilter.h>
+#import <CaptureUX/MBICCaptureFilterResult.h>

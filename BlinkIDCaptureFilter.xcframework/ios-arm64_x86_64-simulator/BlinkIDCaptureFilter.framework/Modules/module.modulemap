@@ -1,0 +1,6 @@
+framework module BlinkIDCaptureFilter {
+  umbrella header "BlinkIDCaptureFilter.h"
+  export *
+
+  module * { export * }
+}

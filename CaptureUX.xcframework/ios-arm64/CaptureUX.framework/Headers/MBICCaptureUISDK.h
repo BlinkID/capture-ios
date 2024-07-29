@@ -42,22 +42,18 @@ static inline NSString * MBIC_UI_LOCALIZED_DEFAULT_STRING(NSString *key) {
     return ([NSString stringWithFormat:@"%@", key]);
 }
 
-static inline NSString * MBIC_UI_LOCALIZED_FOR_LANGUAGE(NSString *key, NSString *language) {
+static inline NSString * MBIC_UI_LOCALIZED_FOR_LANGUAGE(NSString *key) {
 
     NSString *overridenStringFromCustomBundle = NSLocalizedStringWithDefaultValue(key,
-                                                                                  language,
+                                                                                  nil,
                                                                                   [MBICCaptureUISDK sharedInstance].customResourcesBundle,
                                                                                   @"",
                                                                                   @"");
     if (overridenStringFromCustomBundle != nil && ![overridenStringFromCustomBundle isEqualToString:key]) {
         return overridenStringFromCustomBundle;
     }
-
-    return NSLocalizedStringWithDefaultValue(key,
-                                             language,
-                                             [MBICCaptureUISDK sharedInstance].resourcesBundle,
-                                             MBIC_UI_LOCALIZED_DEFAULT_STRING(key),
-                                             nil);
+    
+    return NSLocalizedStringFromTableInBundle(key, nil, [MBICCaptureUISDK sharedInstance].resourcesBundle, @"");
 }
 
 static inline NSString * MBIC_UI_LOCALIZED(NSString *key) {
@@ -70,22 +66,9 @@ static inline NSString * MBIC_UI_LOCALIZED(NSString *key) {
         }
     }
     
-    NSString *language = [MBICCaptureUISDK sharedInstance].language;
-    NSString *localizedString = MBIC_UI_LOCALIZED_FOR_LANGUAGE(key, language);
+    NSString *localizedString = MBIC_UI_LOCALIZED_FOR_LANGUAGE(key);
     
-    #if DEBUG
     return localizedString;
-    #else
-    if ([localizedString isEqualToString:MBIC_UI_LOCALIZED_DEFAULT_STRING(key)]) {
-        if (![language isEqualToString:@"ar-AE"] && [language hasPrefix:@"ar"]) {
-            localizedString = MBIC_UI_LOCALIZED_FOR_LANGUAGE(key, @"ar-AE");
-        }
-        else if (![language isEqualToString:@"en"]) {
-            localizedString = MBIC_UI_LOCALIZED_FOR_LANGUAGE(key, @"en");
-        }
-    }
-    return localizedString;
-    #endif
 }
 
 NS_ASSUME_NONNULL_END

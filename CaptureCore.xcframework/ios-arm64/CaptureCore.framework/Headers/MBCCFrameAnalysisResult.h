@@ -103,57 +103,57 @@ typedef NS_ENUM(NSInteger, MBCCDocumentOcclusionStatus) {
 
 /// Result of frame analysis and current state of analysis info.
 MBCC_CORE_FINAL
-@interface MBCCFrameAnalysisResult : NSObject
+@interface MBCCFrameAnalysisResult : NSObject<NSCopying>
 
 /// State of the capture process.
 ///
 /// See ``MBCCCaptureState`` for more details.
-@property (nonatomic, readonly) MBCCCaptureState captureState;
+@property (nonatomic) MBCCCaptureState captureState;
 
 /// If `true` frame has been captured and participates in captured frames count, otherwise frame has not been captured
 /// because at least one of the checks has failed.
 ///
 /// See ``MBCCFrameAnalysisStatus`` for more details.
-@property (nonatomic, readonly) BOOL isFrameCaptured;
+@property (nonatomic) BOOL isFrameCaptured;
 
 /// Status of the current frame analysis.
-@property (nonatomic, readonly) MBCCFrameAnalysisStatus *frameAnalysisStatus;
+@property (nonatomic) MBCCFrameAnalysisStatus *frameAnalysisStatus;
 
 @end
 
 /// Analysis result of last of the frame.
 MBCC_CORE_FINAL
-@interface MBCCFrameAnalysisStatus: NSObject
+@interface MBCCFrameAnalysisStatus: NSObject<NSCopying>
 
 /// The document side analysis status.
 ///
 /// See ``MBCCDocumentSideAnalysisStatus`` for more details.
-@property (nonatomic, readonly) MBCCDocumentSideAnalysisStatus sideAnalysisStatus;
+@property (nonatomic) MBCCDocumentSideAnalysisStatus sideAnalysisStatus;
 
 /// The document framing status.
 ///
 /// See ``MBCCDocumentFramingStatus`` for more details.
-@property (nonatomic, readonly) MBCCDocumentFramingStatus framingStatus;
+@property (nonatomic) MBCCDocumentFramingStatus framingStatus;
 
 /// The document lighting condintions status.
 ///
 /// See ``MBCCDocumentLightingStatus`` for more details.
-@property (nonatomic, readonly) MBCCDocumentLightingStatus lightingStatus;
+@property (nonatomic) MBCCDocumentLightingStatus lightingStatus;
 
 /// Status of the document blur detection.
 ///
 /// See ``MBCCDocumentBlurStatus`` for more details.
-@property (nonatomic, readonly) MBCCDocumentBlurStatus blurStatus;
+@property (nonatomic) MBCCDocumentBlurStatus blurStatus;
 
 /// Status of the document glare detection.
 ///
 /// See ``MBCCDocumentGlareStatus`` for more details.
-@property (nonatomic, readonly) MBCCDocumentGlareStatus glareStatus;
+@property (nonatomic) MBCCDocumentGlareStatus glareStatus;
 
 /// Status of the document occlusion detection.
 ///
 /// See ``MBCCDocumentOcclusionStatus`` for more details.
-@property (nonatomic, readonly) MBCCDocumentOcclusionStatus occlusionStatus;
+@property (nonatomic) MBCCDocumentOcclusionStatus occlusionStatus;
 
 @end
 
