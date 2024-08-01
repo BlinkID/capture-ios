@@ -47,6 +47,14 @@
 		A20CC5582A39F03F00F669B7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A20CC55A2A39F04B00F669B7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A20CC55F2A39F26C00F669B7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A242FBBB2C53D65800964F07 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Main.strings; sourceTree = "<group>"; };
+		A242FBBC2C53D65900964F07 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A242FBBD2C53D66700964F07 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		A242FBBE2C53D66700964F07 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A242FBBF2C53D66B00964F07 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
+		A242FBC02C53D66B00964F07 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A242FBC12C53D67300964F07 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		A242FBC22C53D67400964F07 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		A2919BB32AE01F4F00074E38 /* CaptureUX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CaptureUX.xcframework; path = ../../CaptureUX.xcframework; sourceTree = "<group>"; };
 		A2919BB42AE01F4F00074E38 /* CaptureCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CaptureCore.xcframework; path = ../../CaptureCore.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +158,10 @@
 			knownRegions = (
 				en,
 				Base,
+				hr,
+				ar,
+				he,
+				"zh-Hans",
 			);
 			mainGroup = A20CC5372A39EFA500F669B7;
 			productRefGroup = A20CC5412A39EFA500F669B7 /* Products */;
@@ -193,6 +205,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				A20CC54A2A39EFA500F669B7 /* Base */,
+				A242FBBB2C53D65800964F07 /* hr */,
+				A242FBBD2C53D66700964F07 /* ar */,
+				A242FBBF2C53D66B00964F07 /* he */,
+				A242FBC12C53D67300964F07 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -201,6 +217,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				A20CC54F2A39EFA600F669B7 /* Base */,
+				A242FBBC2C53D65900964F07 /* hr */,
+				A242FBBE2C53D66700964F07 /* ar */,
+				A242FBC02C53D66B00964F07 /* he */,
+				A242FBC22C53D67400964F07 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -212,6 +232,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -272,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

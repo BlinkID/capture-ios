@@ -28,6 +28,8 @@ typedef NS_ENUM(NSInteger, MBCCAnalyzerError) {
     MBCCAnalyzerErrorMemoryReserveFailure,
 };
 
+typedef void (^MBCCResetSideCompletionBlock)(void);
+
 @protocol MBCCAnalyzerDelegate;
 
 /**
@@ -59,6 +61,9 @@ MBCC_CORE_FINAL
 ///
 /// Use this when you want to reset the whole state and start the analyser from the beginning.
 - (void)reset;
+
+/// Returns capture and analysis of the current side to begin.
+- (void)resetSide:(MBCCResetSideCompletionBlock)completion;
 
 /// Releases ownership of the result object and returns analyzer to initial state.
 ///

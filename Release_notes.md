@@ -1,5 +1,33 @@
 # Release notes
 
+## v1.4.0
+
+- Add Capture Filter:
+    - Capture filter filters capture results after each successful side capture (accepts or drops captured side)
+- SDK now supports localization - see `Localizable.xcstrings`:
+	- Arabic
+	- Chinese (Simplified and Traditional)
+	- Croatian
+	- Czech
+	- Dutch
+	- Filipino
+	- French
+	- German
+	- Hebrew
+	- Hungarian
+	- Indonesian
+	- Italian
+	- Malay
+	- Portuguese (Portugal)
+	- Romanian
+	- Serbian (Latin)
+	- Slovak
+	- Slovenian
+	- Spanish
+	- Thai
+	- Vietnamese 
+- Internal threading optimizations
+
 ## v1.3.1
 
 - License key remote check fix

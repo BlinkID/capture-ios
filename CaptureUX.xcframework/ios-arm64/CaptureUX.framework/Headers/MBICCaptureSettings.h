@@ -13,6 +13,7 @@
 #import <CaptureUX/MBICCameraSettings.h>
 #import <CaptureUX/MBICCaptureUXSettings.h>
 #import <CaptureUX/MBICCaptureViewControllerTheme.h>
+#import <CaptureUX/MBICFilterSettings.h>
 #import <CaptureCore/MBCCAnalyzerSettings.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -33,6 +34,10 @@ MBIC_UX_FINAL
 /// UX settings.
 /// See ``MBICCaptureUXSettings`` for more details.
 @property (nonatomic) MBICCaptureUXSettings *uxSettings;
+
+/// Filter settings.
+/// See ``MBICFilterSettings`` for more details.
+@property (nonatomic, nullable) MBICFilterSettings *filterSettings;
 
 /// Overlay customization settings.
 /// See ``MBICCaptureViewControllerTheme`` for more details.

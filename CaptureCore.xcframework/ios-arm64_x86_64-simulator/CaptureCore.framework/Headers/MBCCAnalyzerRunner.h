@@ -45,6 +45,8 @@ typedef NS_ENUM(NSInteger, MBCCAnalyzerRunnerError) {
     MBCCAnalyzerRunnerErrorAnalyzerSettingsUnsuitable
 };
 
+typedef void (^MBCCAnalyzerRunnerResetSideCompletionBlock)(void);
+
 @protocol MBCCAnalyzerRunnerDelegate;
 
 /// DirectAPI component responsible for image analysis and best frame capture.
@@ -70,6 +72,9 @@ MBCC_CORE_FINAL
 /// Reset analyzer state.
 /// Use this when you want to reset the whole state and start the analyser from the beginning.
 - (void)reset;
+
+/// Returns capture and analysis of the current side to begin.
+- (void)resetSide:(MBCCAnalyzerRunnerResetSideCompletionBlock)completion;
 
 /// Releases ownership of the result object and returns analyzer to initial state.
 /// Method provides zero copy API for consuming result.
