@@ -1,5 +1,9 @@
 # Release notes
 
+## v1.4.1
+
+- Remote license fix
+
 ## v1.4.0
 
 - Add Capture Filter:
