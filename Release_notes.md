@@ -1,5 +1,9 @@
 # Release notes
 
+## v1.4.2
+
+- Added experimental feature `overrideAppPreferredLanguage` which allows setting the language from inside the app. As this is not aligned with [Apple guidelines](https://developer.apple.com/news/?id=u2cfuj88), customers are advised to use it ONLY if needed for transitional period. Any issues that might arise from using this setting are left on customer's discretion for solving.
+
 ## v1.4.1
 
 - Remote license fix
