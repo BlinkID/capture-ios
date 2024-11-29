@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   
   s.name        = "MBCaptureCore"
-  s.version     = "1.4.2"
+  s.version     = "1.4.3"
   s.summary     = "A delightful Direct API component for document capture"
   s.homepage    = "http://microblink.com"
-  s.readme      = "https://raw.githubusercontent.com/BlinkID/capture-ios/v1.4.2/README.md"
+  s.readme      = "https://raw.githubusercontent.com/BlinkID/capture-ios/v1.4.3/README.md"
   
   s.description = <<-DESC
             The BlinkID Capture iOS SDK gives you the ability to auto-capture high quality images of identity documents in a user-friendly way. The SDK provides you with a rectified image of the document that ensures high success rate in extracting document text or verifying the document validity. 
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   }
 
   s.source      = { 
-        :http => 'https://github.com/BlinkID/capture-ios/releases/download/v1.4.2/CaptureCore.xcframework.zip'
+        :http => 'https://github.com/BlinkID/capture-ios/releases/download/v1.4.3/CaptureCore.xcframework.zip'
   }
 
   s.platform     = :ios
