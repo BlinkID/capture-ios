@@ -7,6 +7,20 @@
 [![MBCaptureUX Version](https://img.shields.io/cocoapods/v/MBCaptureUX.svg?style=flat)](https://cocoapods.org/pods/MBCaptureUX)
 [![Platform](https://img.shields.io/cocoapods/p/MBCaptureCore.svg?style=flat)](https://github.com/MBCaptureCore/capture-ios#)
 
+# ⚠️ Project Status: Maintenance Mode
+
+This product is currently in maintenance mode. It is no longer receiving new features or major enhancements.
+
+What this means:
+
+- *Support*: Essential support and critical bug fixes will continue with a yearly product updates.
+
+- *Security*: Security patches will be applied as needed to ensure the product remains safe and functional.
+
+- *Development*: No new feature requests or non-critical enhancements will be considered at this time.
+
+Our goal is to provide a stable, reliable experience for our existing customers while focusing our development efforts on other initiatives.
+
 # _Capture_ SDK for iOS
 
 The BlinkID Capture iOS SDK gives you the ability to auto-capture high quality images of identity documents in a user-friendly way. The SDK provides you with a rectified image of the document that ensures high success rate in extracting document text or verifying the document validity.
