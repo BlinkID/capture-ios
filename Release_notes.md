@@ -1,5 +1,12 @@
 # Release notes
 
+## v1.5.0
+
+- Fixed help screen and onboarding layout on iPhone Duo and other resizable screens: oversized images and help screen not responding to swipe gestures.
+- Fixed help screen header overlapping the status bar and camera area in portrait on a folded iPhone Duo.
+- Minimum required Xcode version is now **Xcode 16.4**.
+- Removed CocoaPods support (`MBCaptureCore` and `MBCaptureUX` podspecs), as CocoaPods is deprecated. Please integrate the SDK using Swift Package Manager or manually.
+
 ## v1.4.3
 
 - Fixed issue where the `didFinishCaptureWithResult` method was sometimes triggered twice after the capture process finished, resulting in the `empty` completeness status.

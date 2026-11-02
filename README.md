@@ -3,9 +3,6 @@
 </p>
 
 [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
-[![MBCaptureCore Version](https://img.shields.io/cocoapods/v/MBCaptureCore.svg?style=flat)](https://cocoapods.org/pods/MBCaptureCore)
-[![MBCaptureUX Version](https://img.shields.io/cocoapods/v/MBCaptureUX.svg?style=flat)](https://cocoapods.org/pods/MBCaptureUX)
-[![Platform](https://img.shields.io/cocoapods/p/MBCaptureCore.svg?style=flat)](https://github.com/MBCaptureCore/capture-ios#)
 
 # ⚠️ Project Status: Maintenance Mode
 
@@ -35,7 +32,6 @@ In the results, you can get a cropped, perspective-corrected image of the docume
   - [Getting started with the Capture SDK](#getting-started-with-the-capture-sdk)
       - [Manual integration](#manual-integration)
       - [Using Swift Package Manager](#using-swift-package-manager)
-      - [Using Cocoapods](#using-cocoapods)
     - [Referencing header file](#referencing-header-file)
     - [Initiating the capture process](#initiating-the-capture-process)
     - [License key](#license-key)
@@ -51,7 +47,7 @@ In the results, you can get a cropped, perspective-corrected image of the docume
 - [Additional info](#additional-info)
 
 # <a name="requirements"></a> Requirements
-SDK package contains `Capture` framework and one or more sample apps that demonstrate framework integration. The framework can be deployed on iOS 13.0 or later. The framework supports Swift and Objective-C projects. **NOTE**: The SDK doesn't contain bitcode.
+SDK package contains `Capture` framework and one or more sample apps that demonstrate framework integration. The framework can be deployed on iOS 13.0 or later and requires Xcode 16.4 or later. The framework supports Swift and Objective-C projects. **NOTE**: The SDK doesn't contain bitcode.
 
 # <a name="quick-start"></a> Quick Start
 
@@ -92,39 +88,6 @@ CaptureCore
 
 ```shell
 https://github.com/BlinkID/capture-core-sp
-```
-
-#### <a name="using-cocoapods"></a> Using Cocoapods
-
-Capture SDK is available as [Cocopods Package](https://cocoapods.org).
-We provide podspecs for each framework. Project dependencies to be managed by CocoaPods are specified in a file called `Podfile`. Create this file in the same directory as your Xcode project (`.xcodeproj`) file.
-
-If you don't have podfile initialized run the following in your project directory.
-
-```
-pod init
-```
-
-Copy and paste the following lines into the TextEdit window:
-
-```ruby
-platform :ios, '13.0'
-target 'Your-App-Name' do
-    pod 'MBCaptureCore', '~> 1.2.1'
-    pod 'MBCaptureUX', '~> 1.2.1'
-end
-```
-
-- Install the dependencies in your project:
-
-```shell
-$ pod install
-```
-
-- From now on, be sure to always open the generated Xcode workspace (`.xcworkspace`) instead of the project file when building your project:
-
-```shell
-open <YourProjectName>.xcworkspace
 ```
 
 ### <a name="referencing-header-file"></a> Referencing header file
