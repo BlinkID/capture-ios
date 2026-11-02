@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Set the license key here.
-        // Valid until: 2025-02-11
-        MBCCCaptureCoreSDK.shared().setLicenseKey("sRwDAAEdY29tLm1pY3JvYmxpbmsuY2FwdHVyZS5zYW1wbGUBCk1pY3JvYmxpbmvCw0KONOTbtcMi7Bi1V4x/uo82uvikHVSVWpkYuD/YeW3batw+7T4wvqECrsscSQLUPGKZx5v7MV6cugWui5RsQjIhqbviebL0rOYlxNrEJ2NCjGA2flmaNY8I4OihDh8e") { _ in
+        // Valid until: 2027-05-01
+        MBCCCaptureCoreSDK.shared().setLicenseKey("sRwDAAEdY29tLm1pY3JvYmxpbmsuY2FwdHVyZS5zYW1wbGUBCm1pY3JvYmxpbmvCw0KONOTbtcMi7BgVzeseyB5hIL6krmdsVWHRQN7y/mS5mp6RB1fnif3lH7B22HkTfAo3U8DV7Q7t6BbvHfFdiJX45PzwqVvlPrd3MTitUZc4Pu7B+kdqZyD4kDukIA+9Ajg=") { _ in
             
         }
         
